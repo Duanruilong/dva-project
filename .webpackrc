@@ -5,6 +5,11 @@
             "changeOrigin": true,
             "pathRewrite": { "^/api" : "" }
         }
-    }
+    },
+    "entry": "src/*.js",
+    "publicPath": "/",
+    "extraBabelPlugins": [
+        ["import", { "libraryName": "antd", "style": "css" }]
+    ]
 
 }
